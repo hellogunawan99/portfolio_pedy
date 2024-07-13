@@ -1,0 +1,47 @@
+.logo {
+    font-family: var(--font-inter), sans-serif;
+  }
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+  
+  .navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navList li {
+    margin-left: 1.5rem;
+  }
+  
+  .navList a {
+    text-decoration: none;
+    color: #5f6368;
+    font-weight: 500;
+  }
+  
+  .navList a:hover {
+    color: #202124;
+  }
+  
+  /* Logo letter colors */
+  .g { color: #4285F4; }
+  .u { color: #EA4335; }
+  .n1 { color: #FBBC05; }
+  .a { color: #4285F4; }
+  .w { color: #34A853; }
+  .a2 { color: #EA4335; }
+  .n2 { color: #FBBC05; }

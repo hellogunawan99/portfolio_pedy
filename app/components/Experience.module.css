@@ -1,0 +1,83 @@
+.timelineContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  
+  .timelineContainer::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  .timelineItem {
+    padding: 15px 30px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .timelineContent {
+    padding: 15px;
+    background: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -45px;
+    top: 16px;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left .icon {
+    right: -45px;
+  }
+  
+  .right .icon {
+    left: -45px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timelineContainer::after {
+      left: 31px;
+    }
+    
+    .timelineItem {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+    
+    .timelineItem.right {
+      left: 0%;
+    }
+    
+    .left .icon,
+    .right .icon {
+      left: 15px;
+    }
+  }
