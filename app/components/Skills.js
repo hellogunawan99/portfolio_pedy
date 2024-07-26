@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { 
   FaDocker, FaPython, FaGitAlt, FaLinux, FaWindows,
   FaHtml5, FaCss3Alt, FaJs, FaFileExcel, FaFileWord, FaFilePowerpoint
@@ -36,6 +36,7 @@ const skills = [
 export default function Skills() {
   const row1Ref = useRef(null);
   const row2Ref = useRef(null);
+  const [hoveredSkill, setHoveredSkill] = useState(null);
 
   useEffect(() => {
     const animateRow = (rowRef, direction) => {
@@ -52,24 +53,32 @@ export default function Skills() {
   }, []);
 
   const createRow = (start, end, ref, direction) => (
-    <div ref={ref} className={`flex space-x-8 py-4 animate-move-${direction}`}>
+    <div ref={ref} className={`flex space-x-4 md:space-x-8 py-2 md:py-4 animate-move-${direction}`}>
       {[...skills, ...skills].slice(start, start + skills.length).map((skill, index) => (
-        <div key={`${skill.name}-${index}`} className="flex flex-col items-center min-w-[100px]">
+        <div 
+          key={`${skill.name}-${index}`} 
+          className="flex flex-col items-center min-w-[60px] md:min-w-[100px]"
+          onMouseEnter={() => setHoveredSkill(skill.name)}
+          onMouseLeave={() => setHoveredSkill(null)}
+        >
           {skill.icon ? 
-            <skill.icon className="text-5xl mb-2" style={{ color: skill.color }} />
+            <skill.icon 
+              className="text-3xl md:text-5xl mb-1 md:mb-2 transition-colors duration-300" 
+              style={{ color: hoveredSkill === skill.name ? skill.color : '#4B5563' }}
+            />
             :
-            <span className="text-5xl mb-2" style={{ color: skill.color }}>?</span>
+            <span className="text-3xl md:text-5xl mb-1 md:mb-2 text-gray-600 transition-colors duration-300">?</span>
           }
-          <span className="text-sm text-center">{skill.name}</span>
+          <span className="text-xs md:text-sm text-center text-gray-700">{skill.name}</span>
         </div>
       ))}
     </div>
   );
 
   return (
-    <section id="skills" className="py-20 bg-gray-100 overflow-hidden">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">My Skills</h2>
+    <section id="skills" className="py-10 md:py-20 bg-gray-100 overflow-hidden">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center text-blue-900">My Skills</h2>
         {createRow(0, skills.length, row1Ref, 'right')}
         {createRow(Math.floor(skills.length / 2), skills.length + Math.floor(skills.length / 2), row2Ref, 'left')}
       </div>
@@ -89,6 +98,11 @@ export default function Skills() {
         .animate-move-right {
           display: flex;
           animation: moveRight 30s linear infinite;
+        }
+        @media (max-width: 768px) {
+          .animate-move-left, .animate-move-right {
+            animation-duration: 60s;
+          }
         }
       `}</style>
     </section>

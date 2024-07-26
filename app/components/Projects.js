@@ -55,9 +55,9 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
+    <section id="projects" className="py-20 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-12 text-center text-blue-900">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {allProjects.slice(0, visibleProjects).map((project) => (
             <div 
@@ -67,7 +67,7 @@ export default function Projects() {
               <img 
                 src={project.image} 
                 alt={project.title} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 flex flex-col justify-end group-hover:bg-opacity-70">
                 <div className="p-6 transform transition-transform duration-300 translate-y-8 group-hover:translate-y-0">
@@ -90,14 +90,14 @@ export default function Projects() {
           {visibleProjects < allProjects.length ? (
             <button 
               onClick={loadMore}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               Show More <FaChevronDown className="inline ml-2" />
             </button>
           ) : visibleProjects > initialProjectCount && (
             <button 
               onClick={showLess}
-              className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
+              className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               Show Less <FaChevronUp className="inline ml-2" />
             </button>
