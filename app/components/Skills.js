@@ -36,7 +36,7 @@ const skills = [
 export default function Skills() {
   const row1Ref = useRef(null);
   const row2Ref = useRef(null);
-  const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [hoveredRow, setHoveredRow] = useState(null);
 
   useEffect(() => {
     const animateRow = (rowRef, direction) => {
@@ -52,19 +52,22 @@ export default function Skills() {
     animateRow(row2Ref, 'left');
   }, []);
 
-  const createRow = (start, end, ref, direction) => (
-    <div ref={ref} className={`flex space-x-4 md:space-x-8 py-2 md:py-4 animate-move-${direction}`}>
+  const createRow = (start, end, ref, direction, rowNumber) => (
+    <div 
+      ref={ref} 
+      className={`flex space-x-4 md:space-x-8 py-2 md:py-4 animate-move-${direction}`}
+      onMouseEnter={() => setHoveredRow(rowNumber)}
+      onMouseLeave={() => setHoveredRow(null)}
+    >
       {[...skills, ...skills].slice(start, start + skills.length).map((skill, index) => (
         <div 
           key={`${skill.name}-${index}`} 
           className="flex flex-col items-center min-w-[60px] md:min-w-[100px]"
-          onMouseEnter={() => setHoveredSkill(skill.name)}
-          onMouseLeave={() => setHoveredSkill(null)}
         >
           {skill.icon ? 
             <skill.icon 
               className="text-3xl md:text-5xl mb-1 md:mb-2 transition-colors duration-300" 
-              style={{ color: hoveredSkill === skill.name ? skill.color : '#4B5563' }}
+              style={{ color: hoveredRow === rowNumber ? skill.color : '#4B5563' }}
             />
             :
             <span className="text-3xl md:text-5xl mb-1 md:mb-2 text-gray-600 transition-colors duration-300">?</span>
@@ -79,8 +82,8 @@ export default function Skills() {
     <section id="skills" className="py-10 md:py-20 bg-gray-100 overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center text-blue-900">My Skills</h2>
-        {createRow(0, skills.length, row1Ref, 'right')}
-        {createRow(Math.floor(skills.length / 2), skills.length + Math.floor(skills.length / 2), row2Ref, 'left')}
+        {createRow(0, skills.length, row1Ref, 'right', 1)}
+        {createRow(Math.floor(skills.length / 2), skills.length + Math.floor(skills.length / 2), row2Ref, 'left', 2)}
       </div>
       <style jsx>{`
         @keyframes moveLeft {
