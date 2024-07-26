@@ -64,9 +64,11 @@ export default function Projects() {
               key={project.id} 
               className="relative h-64 rounded-lg overflow-hidden shadow-lg group transition-all duration-300 ease-in-out transform hover:scale-105 hover:z-10"
             >
-              <Image 
+              <img 
                 src={project.image} 
                 alt={project.title} 
+                // width={500}
+                // height={300}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 transition-all duration-300 flex flex-col justify-end group-hover:bg-opacity-70">
