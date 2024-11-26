@@ -11,28 +11,28 @@ export default function Projects() {
       title: 'Monitoring Display Jigsaw', 
       description: 'Monitoring yang menghadirkan visualisasi status sistem secara dinamis dan real-time, dirancang untuk meningkatkan efisiensi dan pengawasan.',
       image: '/display_status.jpeg',
-      pdf: '/display_status.pdf'
+      pdf: '/project1.pdf'
     },
     { 
       id: 2, 
       title: 'Computer Vision Truck Distance', 
       description: 'Proyek ini memanfaatkan algoritma Computer Vision berbasis YOLO, OpenCV, dan training Model untuk menghitung jarak antar truk secara real-time, meningkatkan keselamatan dan mengoptimalkan manajemen armada.',
       image: '/truck_distance.jpeg',
-      pdf: '/truck_distance.pdf'
+      pdf: '/project2.pdf'
     },
     { 
       id: 3, 
       title: 'IP Monitoring Real Time', 
       description: 'Sistem monitoring IP berbasis real-time yang membantu dalam deteksi cepat masalah jaringan dan memastikan kelancaran operasional.',
       image: '/ip_monitoring.jpeg',
-      pdf: '/ip_monitoring.pdf'
+      pdf: '/project3.pdf'
     },
     { 
       id: 4, 
       title: 'Server Migration: From Physical to Virtual Environment', 
       description: 'Migrasi dari server fisik ke VM yang melibatkan pemindahan data dan aplikasi untuk meningkatkan performa, fleksibilitas, dan kemudahan dalam manajemen sistem.',
       image: '/migration.jpeg',
-      pdf: '/migration.pdf'
+      pdf: '/project1.pdf'
     },
   ];
 
