@@ -28,7 +28,7 @@ const experienceData = [
     type: 'work',
     title: 'System Administrator',
     organization: 'PT. Saptaindra Sejati',
-    date: '2022 - Present',
+    date: 'September 2022 - Present',
     details: "A system administrator manages and maintains an FMS (Fleet Management System) infrastructure to ensure optimal performance and security.",
     logo: '/LOGO ADARO ENERGY - SIS (LANDSCAPE).png'
   },

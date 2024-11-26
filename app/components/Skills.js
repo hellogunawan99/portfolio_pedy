@@ -155,11 +155,11 @@ export default function Skills() {
 
 function FeaturedSkills() {
   const skills = [
-    { name: 'Python', icon: FaPython, color: '#3776AB', proficiency: 90, description: 'Expertise in machine learning and data analysis' },
-    { name: 'Go', icon: DiGo, color: '#00ADD8', proficiency: 85, description: 'High-performance backend development and scripting' },
-    { name: 'Next.js', icon: SiNextdotjs, color: '#000000', proficiency: 80, description: 'Building scalable and SEO-friendly web applications' },
+    { name: 'Python', icon: FaPython, color: '#3776AB', proficiency: 85, description: 'Expertise in machine learning and data analysis' },
+    { name: 'Go', icon: DiGo, color: '#00ADD8', proficiency: 75, description: 'High-performance backend development and scripting' },
+    { name: 'Next.js', icon: SiNextdotjs, color: '#000000', proficiency: 65, description: 'Building scalable and SEO-friendly web applications' },
     { name: 'Linux', icon: FaLinux, color: '#FCC624', proficiency: 95, description: 'System administration and server optimization' },
-    { name: 'AI Tools', icon: SiOpenai, color: '#00A67E', proficiency: 75, description: 'Leveraging AI for enhanced productivity and innovation' },
+    { name: 'AI Tools', icon: SiOpenai, color: '#00A67E', proficiency: 85, description: 'Leveraging AI for enhanced productivity and innovation' },
   ];
 
   return (

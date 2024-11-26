@@ -10,14 +10,14 @@ export default function About() {
             <h3 className="text-2xl font-semibold mb-4 text-orange-500">Gunawan Wibisono</h3>
             <div className="text-lg text-gray-700 leading-relaxed space-y-4">
               <p>
-                Saya adalah seorang profesional DevOps yang bersemangat dengan 2 tahun pengalaman sebagai System Administrator dalam Fleet Management System. Keahlian saya meliputi pengelolaan infrastruktur sistem dan optimalisasi kinerja.
+              Saya adalah seorang DevOps enthusiast dengan 2 tahun pengalaman sebagai System Administrator di Fleet Management System. Menguasai Linux, pemrograman (Python, Go, JavaScript), dan integrasi solusi DevOps, saya fokus pada pengelolaan infrastruktur dan optimalisasi sistem yang efisien. Siap menghadapi tantangan baru di dunia teknologi.
               </p>
-              <p>
-                Dengan latar belakang yang kuat dalam pemrograman (Python, Go, JavaScript) dan framework modern (Next.js, Flutter, React.js), saya mampu mengintegrasikan solusi DevOps yang inovatif dan efisien.
+              {/* <p>
+                Dengan latar belakang yang kuat dalam pemrograman (Python, Go, JavaScript) saya mampu mengintegrasikan solusi DevOps yang inovatif dan efisien.
               </p>
               <p>
                 Saya menguasai berbagai sistem operasi, dengan spesialisasi di Linux, dan selalu bersemangat untuk menghadapi tantangan baru dalam dunia teknologi yang terus berkembang.
-              </p>
+              </p> */}
             </div>
             <div className="flex space-x-4 mt-6">
               <a href="#contact" className="inline-block bg-gray-500 text-white py-2 px-6 rounded-full hover:bg-gray-700 transition duration-300">Get in Touch</a>
