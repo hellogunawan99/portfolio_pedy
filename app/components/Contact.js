@@ -13,7 +13,7 @@ export default function Contact() {
     { icon: FaGithub, text: 'GitHub', href: 'https://github.com/hellogunawan99', color: 'text-gray-800 hover:text-gray-600' },
     { icon: FaEnvelope, text: 'Email', onClick: handleEmailClick, color: 'text-red-600 hover:text-red-800' },
     { icon: FaInstagram, text: 'Instagram', href: 'https://www.instagram.com/hello.gunawan/', color: 'text-pink-600 hover:text-pink-800' },
-    { icon: FaWhatsapp, text: 'WhatsApp', href: 'https://wa.me/085158735552', color: 'text-green-600 hover:text-green-800' },
+    { icon: FaWhatsapp, text: 'WhatsApp', href: 'https://wa.me/+6285158735552', color: 'text-green-600 hover:text-green-800' },
     { icon: FaTelegram, text: 'Telegram', href: 'https://t.me/hellogunawan', color: 'text-blue-600 hover:text-blue-800' },
     { icon: FaTwitter, text: 'Twitter', href: 'https://x.com/Gunawan96429055', color: 'text-blue-400 hover:text-blue-600' },
     { icon: FaMedium, text: 'Medium', href: 'https://medium.com/@gunawanwibisono4712', color: 'text-gray-700 hover:text-gray-900' },
@@ -41,11 +41,11 @@ export default function Contact() {
           {/* New Section: Quote and CTA */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
             <blockquote className="text-2xl italic text-gray-600 mb-8 text-center">
-              "Coding is not just about algorithms; it's about creating solutions that make a difference."
+            &quot;Coding is not just about algorithms; it&apos;s about creating solutions that make a difference.&quot;
             </blockquote>
             <div className="bg-orange-400 text-white py-4 px-8 rounded-lg shadow-lg hover:bg-orange-500 transition duration-300">
               <a href="mailto:gunawanwibisono4712@gmail.com" className="text-lg font-bold">
-                Let's Work Together!
+                Let&apos;s Work Together!
               </a>
             </div>
           </div>
