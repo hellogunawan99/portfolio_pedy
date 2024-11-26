@@ -8,52 +8,31 @@ export default function Projects() {
   const allProjects = [
     { 
       id: 1, 
-      title: 'Cloud Migration Project', 
-      description: 'Led a team in migrating on-premises infrastructure to AWS, resulting in 30% cost reduction and improved scalability.',
-      image: '/project1.jpg',
-      pdf: '/project1.pdf'
+      title: 'Monitoring Display Jigsaw', 
+      description: 'Monitoring yang menghadirkan visualisasi status sistem secara dinamis dan real-time, dirancang untuk meningkatkan efisiensi dan pengawasan.',
+      image: '/display_status.jpeg',
+      pdf: '/display_status.pdf'
     },
     { 
       id: 2, 
-      title: 'Automated CI/CD Pipeline', 
-      description: 'Implemented a fully automated CI/CD pipeline using Jenkins, Docker, and Kubernetes, reducing deployment time by 70%.',
-      image: '/project2.jpg',
-      pdf: '/project2.pdf'
+      title: 'Computer Vision Truck Distance', 
+      description: 'Proyek ini memanfaatkan algoritma Computer Vision berbasis YOLO, OpenCV, dan training Model untuk menghitung jarak antar truk secara real-time, meningkatkan keselamatan dan mengoptimalkan manajemen armada.',
+      image: '/truck_distance.jpeg',
+      pdf: '/truck_distance.pdf'
     },
     { 
       id: 3, 
-      title: 'Infrastructure as Code Implementation', 
-      description: 'Developed and maintained Infrastructure as Code using Terraform, improving infrastructure consistency and reducing provisioning time by 60%.',
-      image: '/project3.jpg',
-      pdf: '/project3.pdf'
+      title: 'IP Monitoring Real Time', 
+      description: 'Sistem monitoring IP berbasis real-time yang membantu dalam deteksi cepat masalah jaringan dan memastikan kelancaran operasional.',
+      image: '/ip_monitoring.jpeg',
+      pdf: '/ip_monitoring.pdf'
     },
     { 
       id: 4, 
-      title: 'Automated CI/CD Pipeline', 
-      description: 'Implemented a fully automated CI/CD pipeline using Jenkins, Docker, and Kubernetes, reducing deployment time by 70%.',
-      image: '/project2.jpg',
-      pdf: '/project2.pdf'
-    },
-    { 
-      id: 5, 
-      title: 'Infrastructure as Code Implementation', 
-      description: 'Developed and maintained Infrastructure as Code using Terraform, improving infrastructure consistency and reducing provisioning time by 60%.',
-      image: '/project3.jpg',
-      pdf: '/project3.pdf'
-    },
-    { 
-      id: 6, 
-      title: 'Infrastructure as Code Implementation', 
-      description: 'Developed and maintained Infrastructure as Code using Terraform, improving infrastructure consistency and reducing provisioning time by 60%.',
-      image: '/project3.jpg',
-      pdf: '/project3.pdf'
-    },
-    { 
-      id: 7, 
-      title: 'Infrastructure as Code Implementation', 
-      description: 'Developed and maintained Infrastructure as Code using Terraform, improving infrastructure consistency and reducing provisioning time by 60%.',
-      image: '/project3.jpg',
-      pdf: '/project3.pdf'
+      title: 'Server Migration: From Physical to Virtual Environment', 
+      description: 'Migrasi dari server fisik ke VM yang melibatkan pemindahan data dan aplikasi untuk meningkatkan performa, fleksibilitas, dan kemudahan dalam manajemen sistem.',
+      image: '/migration.jpeg',
+      pdf: '/migration.pdf'
     },
   ];
 

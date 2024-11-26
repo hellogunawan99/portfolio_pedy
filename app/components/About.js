@@ -21,6 +21,7 @@ export default function About() {
             </div>
             <div className="flex space-x-4 mt-6">
               <a href="#contact" className="inline-block bg-gray-500 text-white py-2 px-6 rounded-full hover:bg-gray-700 transition duration-300">Get in Touch</a>
+              <a href="/gunawan_resume.pdf" download="gunawan_resume.pdf" className="inline-block bg-gray-500 text-white py-2 px-6 rounded-full hover:bg-gray-700 transition duration-300">Resume</a>
               {/* <a href="/resume.pdf" download className="inline-block bg-white text-gray-900 py-2 px-6 rounded-full border border-gray-900 hover:bg-gray-100 transition duration-300">Download CV</a> */}
             </div>
           </div>

@@ -41,7 +41,7 @@ export default function Contact() {
           {/* New Section: Quote and CTA */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
             <blockquote className="text-2xl italic text-gray-600 mb-8 text-center">
-            &quot;Problem is not just about solving it; it&apos;s about creating solutions that make a difference.&quot;
+            &quot;A problem is not just something to be solved, it’s an opportunity to craft solutions that truly make a difference.&quot;
             </blockquote>
             <div className="bg-orange-400 text-white py-4 px-8 rounded-lg shadow-lg hover:bg-orange-500 transition duration-300">
               <a href="mailto:gunawanwibisono4712@gmail.com" className="text-lg font-bold">

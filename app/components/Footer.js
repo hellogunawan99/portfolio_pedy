@@ -19,8 +19,8 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4 text-white">Connect</h3>
             <ul className="space-y-2">
               <li><a href="https://www.linkedin.com/in/gunawan-wibisono-9aa883237/" className="flex items-center hover:text-white transition-colors duration-300"><FaLinkedin className="mr-3 text-gray-500" /> LinkedIn</a></li>
-              <li><a href="https://github.com/hellogunawan99" className="flex items-center hover:text-white transition-colors duration-300"><FaGithub className="mr-3 text-gray-500" /> GitHub</a></li>
-              <li>
+              {/* <li><a href="https://github.com/hellogunawan99" className="flex items-center hover:text-white transition-colors duration-300"><FaGithub className="mr-3 text-gray-500" /> GitHub</a></li> */}
+              {/* <li>
                 <a 
                   href="/gunawan_portfolio.pdf" 
                   download="gunawan_portfolio.pdf"
@@ -28,7 +28,7 @@ const Footer = () => {
                 >
                   <FaDownload className="mr-3 text-gray-500" /> Download Portfolio
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="w-full md:w-1/3">
@@ -39,8 +39,8 @@ const Footer = () => {
               <li><Link href="/#projects" className="flex items-center hover:text-white transition-colors duration-300"><FaProjectDiagram className="mr-3 text-gray-500" /> Projects</Link></li>
               <li>
                 <a 
-                  href="/gunawan_portfolio.pdf" 
-                  download="gunawan_portfolio.pdf"
+                  href="/gunawan_resume.pdf" 
+                  download="gunawan_resume.pdf"
                   className="flex items-center hover:text-white transition-colors duration-300"
                 >
                   <FaFileArchive className="mr-3 text-gray-500" /> Download Resume
