@@ -62,14 +62,14 @@ export default function Projects() {
               <div className={styles.projectInfo}>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.projectDescription}>{project.description}</p>
-                <a 
+                {/* <a 
                   href={project.pdf} 
                   download
                   className={styles.projectLink}
                 >
                   <FaFileAlt className="mr-2" />
                   FSD (Functional Specification Document)
-                </a>
+                </a> */}
               </div>
             </div>
           ))}

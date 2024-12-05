@@ -5,14 +5,24 @@ import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 import styles from './Experience.module.css';
 
 const experienceData = [
+    // Add more experiences as needed
   {
-    id: 1,
-    type: 'education',
-    title: "Associate's Degree in Oil Palm Plantation ( D1 )",
-    organization: 'Institut Perkebunan Yogyakarta',
-    date: '2017 - 2018',
-    details: 'Focused on management Oil Palm Plantation.',
-    logo: '/Institut Pertanian STIPER Yogyakarta.png'
+    id: 4,
+    type: 'work',
+    title: 'System Administrator',
+    organization: 'PT. Saptaindra Sejati',
+    date: 'November 2022 - Present',
+    details: "A system administrator manages and maintains an FMS (Fleet Management System) infrastructure to ensure optimal performance and security.",
+    logo: '/LOGO ADARO ENERGY - SIS (LANDSCAPE).png'
+  },
+  {
+    id: 3,
+    type: 'work',
+    title: 'Field Support Technician',
+    organization: 'PT. Saptaindra Sejati',
+    date: 'September 2022 - November 2022',
+    details: "Maintains and supports Fleet Management Systems (FMS) using Hexagon Jigsaw to optimize fleet operations. Handles installation, troubleshooting, and ensures system reliability for accurate telematics data and operational efficiency.",
+    logo: '/LOGO ADARO ENERGY - SIS (LANDSCAPE).png'
   },
   {
     id: 2,
@@ -24,15 +34,14 @@ const experienceData = [
     logo: '/mr bob kampung inggris.png'
   },
   {
-    id: 3,
-    type: 'work',
-    title: 'System Administrator',
-    organization: 'PT. Saptaindra Sejati',
-    date: 'September 2022 - Present',
-    details: "A system administrator manages and maintains an FMS (Fleet Management System) infrastructure to ensure optimal performance and security.",
-    logo: '/LOGO ADARO ENERGY - SIS (LANDSCAPE).png'
+    id: 1,
+    type: 'education',
+    title: "Associate's Degree in Oil Palm Plantation ( D1 )",
+    organization: 'Institut Perkebunan Yogyakarta',
+    date: '2017 - 2018',
+    details: 'Focused on management Oil Palm Plantation.',
+    logo: '/Institut Pertanian STIPER Yogyakarta.png'
   },
-  // Add more experiences as needed
 ];
 
 export default function Experience() {

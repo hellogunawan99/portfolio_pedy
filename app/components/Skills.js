@@ -176,7 +176,7 @@ function FeaturedSkills() {
         {/* Your photo */}
         <div className="md:w-1/3 mb-6 md:mb-0">
           <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
-            <img src="/ai me.jpeg" alt="Gunawan" className="rounded-full w-full h-full object-cover shadow-xl" />
+            <img src="/gunawan.png" alt="Gunawan" className="rounded-full w-full h-full object-cover shadow-xl" />
             <div className="absolute inset-0 rounded-full border-4 border-blue-500 opacity-75"></div>
           </div>
         </div>
@@ -187,11 +187,11 @@ function FeaturedSkills() {
             <div key={index} className="mb-4 md:mb-6">
               <div className="flex items-center mb-2">
                 <skill.icon className="text-2xl md:text-3xl mr-3" style={{ color: skill.color }} />
-                <span className="text-base md:text-lg font-semibold text-gray-700">{skill.name}</span>
+                <span className="text-base md:text-lg font-semibold text-grey-700">{skill.name}</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-3 md:h-4 overflow-hidden">
                 <div 
-                  className="bg-gradient-to-r from-blue-400 to-blue-600 h-full rounded-full"
+                  className="bg-gradient-to-r from-gray-500 to-orange-600 h-full rounded-full"
                   style={{ width: `${skill.proficiency}%` }}
                 ></div>
               </div>
