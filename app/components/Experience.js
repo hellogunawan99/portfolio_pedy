@@ -22,7 +22,7 @@ const experienceData = [
     organization: 'PT. Saptaindra Sejati',
     date: 'September 2022 - November 2022',
     details: "Maintains and supports Fleet Management Systems (FMS) using Hexagon Jigsaw to optimize fleet operations. Handles installation, troubleshooting, and ensures system reliability for accurate telematics data and operational efficiency.",
-    logo: '/LOGO ADARO ENERGY - SIS (LANDSCAPE).png'
+    logo: '/adaro_services.jpeg'
   },
   {
     id: 2,
