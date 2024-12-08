@@ -7,7 +7,7 @@ export default function About() {
         <h2 className="text-4xl font-bold mb-12 text-center text-orange-400">About Me</h2>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-2xl font-semibold mb-4 text-orange-500">Gunawan Wibisono</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-orange-500">Pedyawan Atma Ridullah</h3>
             <div className="text-lg text-gray-700 leading-relaxed space-y-4">
               <p>
               Saya adalah seorang DevOps enthusiast dengan 2 tahun pengalaman sebagai System Administrator di Fleet Management System. Menguasai Linux, pemrograman (Python, Go, JavaScript), dan integrasi solusi DevOps, saya fokus pada pengelolaan infrastruktur dan optimalisasi sistem yang efisien. Siap menghadapi tantangan baru di dunia teknologi.
@@ -28,7 +28,7 @@ export default function About() {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <Image
-                src="/gunawan.png"
+                src="/FOTO.jpg"
                 alt="Gunawan Wibisono"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

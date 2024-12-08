@@ -61,7 +61,7 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.logo}>
-        <Link href="/">GUNAWAN.</Link>
+        <Link href="/">PEDYAWAN</Link>
       </div>
       {isMobile ? (
         <>

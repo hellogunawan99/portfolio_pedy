@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-500">&copy; 2024 Gunawan Wibisono. All rights reserved.</p>
+          <p className="text-gray-500">&copy; 2024 Pedyawan Atma Ridullah All rights reserved.</p>
         </div>
       </div>
     </footer>
